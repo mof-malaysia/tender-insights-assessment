@@ -1,6 +1,6 @@
 # Software Engineer (Data/AI) - Tender Insights Assessment
 
-> You are free to use any AI tools to answer this repo,but we will ask implementation details later on!
+> You are free to use any AI tools to answer this assessment,but we will ask implementation details later on!
 
 This repo is intentionally barebones. You design the code structure and implementation approach.
 
