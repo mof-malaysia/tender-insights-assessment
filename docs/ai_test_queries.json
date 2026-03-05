@@ -1,0 +1,52 @@
+[
+  {
+    "id": "q1_high_risk_explain",
+    "question_template": "Explain why submission {{submission_id}} is high risk based on available evidence.",
+    "how_to_select_submission_id": "Use the highest-risk submission from your deterministic output.",
+    "must_include": [
+      "clear risk drivers",
+      "at least 2 citations",
+      "no recomputation of risk score"
+    ]
+  },
+  {
+    "id": "q2_low_risk_explain",
+    "question_template": "Explain why submission {{submission_id}} is lower risk compared to others in the same batch.",
+    "how_to_select_submission_id": "Use a low-risk submission from your deterministic output.",
+    "must_include": [
+      "comparative reasoning",
+      "citations",
+      "explicit uncertainty if evidence is incomplete"
+    ]
+  },
+  {
+    "id": "q3_event_context",
+    "question_template": "What event or payment history context is most relevant to submission {{submission_id}}?",
+    "how_to_select_submission_id": "Use any submission in your top-20 explained set.",
+    "must_include": [
+      "event/payment context summary",
+      "citations referencing source ids",
+      "no fabricated identifiers"
+    ]
+  },
+  {
+    "id": "q4_missing_evidence_behavior",
+    "question_template": "Explain risk for submission {{submission_id}} with weak or missing evidence.",
+    "how_to_select_submission_id": "Pick a submission where profile/payment evidence is limited.",
+    "must_include": [
+      "status=insufficient_evidence or equivalent",
+      "explicit evidence gap statement",
+      "citations to whatever evidence is available"
+    ]
+  },
+  {
+    "id": "q5_consistency_check",
+    "question_template": "Re-run the explanation for submission {{submission_id}} and verify output consistency.",
+    "how_to_select_submission_id": "Reuse one ID from q1 or q2.",
+    "must_include": [
+      "same deterministic risk score",
+      "stable citation behavior",
+      "small wording variation is acceptable"
+    ]
+  }
+]
