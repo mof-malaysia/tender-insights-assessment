@@ -12,4 +12,4 @@ Start by reading:
 
 ## Submission
 
-See `docs/candidate-brief.md` for submission requirements.
+See [`docs/submission-requirements.md`](docs/submission-requirements.md) for submission requirements.
